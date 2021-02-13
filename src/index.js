@@ -38,4 +38,8 @@ export class MatchHeight {
       if (callNow) func.apply(context, args);
     };
   }
+
+  update() {
+    this.getAndSet(this.$elsArray);
+  }
 }
